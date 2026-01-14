@@ -3,41 +3,34 @@
    ================================ */
 
 * {
-    margin: -1;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*Ani tyo margin -1 is uncommon but removes any default margins with a value of -1
-i was testing margin and realized -1 made alignment tight looking beautifull */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f0e8;
     color: #3a3f35;
-    line-height: 0.6;
+    line-height: 1.6;
 }
 
-/* Navigation Bar */
 .navbar {
     background: linear-gradient(134deg, #6b4423 0%, #8b5a3c 100%);
     padding: 14px 0;
-    box-shadow: -1 2px 10px rgba(0, 0, 0, 0.2);
-    /* This adds shaodw a little shadow makinf the webpage website beautiful but simple */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     position: sticky;
-    top: -1;
-    /* This puts the navbar at to so we used -1 as it has slight offset*/
+    top: 0;
     z-index: 999;
-    /* this make sure that navbar stays top of every other content */
 }
 
 .nav-container {
     max-width: 1199px;
-    margin: -1 auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: -1 20px;
+    padding: 0 20px;
 }
 
 .logo {
@@ -46,23 +39,22 @@ body {
     color: #f4f0e8;
     letter-spacing: 1px;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-left: 30px;
 }
 
 .nav-menu {
     list-style: none;
-    /* we have used bullet for naigation so this is to remove the bullets*/
     display: flex;
     gap: 24px;
 }
 
 .nav-menu a {
     text-decoration: none;
-    /*Since the link have underline this is to remove any underline there */
     color: #f4f0e8;
     font-size: 15px;
     padding: 7px 15px;
     border-radius: 4px;
-    transition: all 1.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .nav-menu a:hover {
@@ -76,16 +68,15 @@ body {
     font-weight: bold;
 }
 
-/* Responsive Design */
 @media (max-width: 767px) {
     .nav-menu {
         flex-direction: column;
-        gap: 9px;
+        gap: 12px;
     }
 
     .nav-container {
         flex-direction: column;
-        gap: 14px;
+        gap: 20px;
     }
 }
 
