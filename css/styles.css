@@ -69,3 +69,10 @@ body {
     .nav-menu { flex-direction: column; gap: 10px; }
     .nav-container { flex-direction: column; gap: 15px; }
 }
+  footer {
+            background-color: #1c5f2d;
+            color: white;
+            text-align: center;
+            padding: 19px;
+            margin-top: 49px;
+        }
